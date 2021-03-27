@@ -1,0 +1,27 @@
+{
+    "devDependencies": {
+        "@inertiajs/inertia": "^0.8.2",
+        "@inertiajs/inertia-vue3": "^0.3.4",
+        "@inertiajs/progress": "^0.2.4",
+        "@vue/compiler-sfc": "^3.0.5",
+        "axios": "^0.21.1",
+        "cross-env": "^5.2.1",
+        "laravel-mix": "^6.0.5",
+        "lodash": "^4.17.20",
+        "postcss": "^8.2.1",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.30.0",
+        "sass-loader": "^7.3.1",
+        "vue": "^3.0.5",
+        "vue-loader": "^16.1.2"
+    },
+    "private": true,
+    "scripts": {
+        "dev": "npx mix",
+        "development": "mix",
+        "hot": "mix watch --hot",
+        "production": "mix --production",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000"
+    }
+}

@@ -1,0 +1,11 @@
+*.pyc
+.env
+*__pycache__
+venv
+.venv
+.env.*
+.vscode
+.pytest_cache
+node_modules
+!.env.testing
+noorator

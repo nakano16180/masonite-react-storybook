@@ -3,16 +3,13 @@
 {% else %}
     {% extends 'base.html' %}
 {% endif %}
-
 {% block css %}
 <!-- Application CSS -->
 <link href="/static/style.css" rel="stylesheet" type="text/css">
 {% endblock %}
-
 {% block title %}
     Welcome To {{ config('application.name', 'Masonite') }}
 {% endblock %}
-
 {% block content %}
 <div class="text-center text-gray-500">
     <div class="mb-10 text-7xl">
@@ -27,7 +24,6 @@
         <a href="https://github.com/MasoniteFramework/masonite">Software Craftsmanship</a>
     </div>
     <br><br>
-
     <div class="links">
         <a href="https://github.com/MasoniteFramework/masonite">Github</a>
         <a href="https://docs.masoniteproject.com">Documentation</a>

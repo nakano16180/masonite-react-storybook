@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{{ config('application.name') }}</title>
+    
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+    {% block css %}{% endblock %}
+
+</head>
+
+<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+    <div id="app">
+        <header class="bg-blue-900 py-6">
+            <div class="container mx-auto flex justify-between items-center px-6">
+                <div>
+                    <a class="text-lg font-semibold text-gray-100 no-underline" href="/home">
+                        {{ config('application.name') }}
+                    </a>
+                </div>
+                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="navbar-collapse d-lg-flex justify-content-end collapse" id="navbar">
+                        <ul class="navbar-nav">
+                            {% if auth() %}
+                                <a class="nav-link" href="/logout">Logout</a>
+                            {% else %}
+                                <a class="no-underline hover:underline" href="/login">Login</a>
+                                <a class="no-underline hover:underline" href="/register">Register</a>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

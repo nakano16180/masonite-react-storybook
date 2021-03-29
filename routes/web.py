@@ -10,3 +10,6 @@ ROUTES += [
     Get("/inertia", "InertiaDemoController@show"),
     Get("/inertia-hello", "InertiaDemoController@hello"),
 ]
+
+from masonite.auth import Auth 
+ROUTES += Auth.routes()

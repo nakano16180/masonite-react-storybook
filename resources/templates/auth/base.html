@@ -18,20 +18,12 @@
                     </a>
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                    <button class="flex flex-wrap list-reset pl-0 mb-0bar-toggler" type="button" data-toggle="flex-growlapse" data-target="#relative flex flex-wrap items-center content-between py-2 px-4" aria-controls="navbar"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="flex flex-wrap list-reset pl-0 mb-0bar-toggler-icon"></span>
-                    </button>
-                    <div class="flex flex-wrap list-reset pl-0 mb-0bar-collapse lg:flex justify-content-end flex-growlapse" id="relative flex flex-wrap items-center content-between py-2 px-4">
-                        <ul class="flex flex-wrap list-reset pl-0 mb-0bar-nav">
-                            {% if auth() %}
-                                <a class="inline-block py-2 px-4 no-underline" href="/logout">Logout</a>
-                            {% else %}
-                                <a class="no-underline hover:underline" href="/login">Login</a>
-                                <a class="no-underline hover:underline" href="/register">Register</a>
-                            {% endif %}
-                        </ul>
-                    </div>
+                    {% if auth() %}
+                        <a class="no-underline hover:underline" href="/logout">Logout</a>
+                    {% else %}
+                        <a class="no-underline hover:underline" href="/login">Login</a>
+                        <a class="no-underline hover:underline" href="/register">Register</a>
+                    {% endif %}
                 </nav>
             </div>
         </header>

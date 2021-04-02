@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "05e76d56e390d963a7a86be2caebe76b5cf2e0475f1a559625d55b466002f08d"
+            "sha256": "bedf16dcd5ecb12a63076607bb7585005089402b36705510cba07882ea278fc7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -125,7 +125,7 @@
                 "sha256:300f4b0825f57688b47b6d70c6a31de33512eb2fa1ac614f780939aa0cf91680",
                 "sha256:42ca7b6ce88b6c7433e2ce47ea884e91ec93104a4b754998be498a8e6c3d37dd"
             ],
-            "markers": "python_version >= '3.6' and python_version < '4'",
+            "markers": "python_version >= '3.6' and python_version < '4.0'",
             "version": "==0.3.1"
         },
         "cryptography": {
@@ -269,14 +269,6 @@
             ],
             "version": "==0.0.5"
         },
-        "masonite-inertia": {
-            "hashes": [
-                "sha256:23936f9f6913213ce71f0e5c92842009f422140d456b9e41b36228736e37ada8",
-                "sha256:b557676ef3271465f497a7280eba8979f9153afe83d696df47da04403507646b"
-            ],
-            "index": "pypi",
-            "version": "==3.1.2"
-        },
         "masonite-logging": {
             "hashes": [
                 "sha256:f7008bc1cb4fc58b9327e63cee5631ae73d82076a5140691fc2ef3b2b42742db"
@@ -286,9 +278,9 @@
         },
         "masonite-orm": {
             "hashes": [
-                "sha256:d608569e26d2a782175212b8c35af7be4455406341efde5e63d815c82d45a661"
+                "sha256:614d694f4f1ad5c1e5cabcfd3e77353137975e78f6b47abd661d14b8501266d1"
             ],
-            "version": "==1.0.43"
+            "version": "==1.0.45"
         },
         "masonite-validation": {
             "hashes": [
@@ -377,7 +369,7 @@
                 "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c",
                 "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==2.8.1"
         },
         "python-dotenv": {
@@ -458,7 +450,7 @@
                 "sha256:fed0f22bf1313ff79c7fc318f7199d6c2f96d4de3234b2f12a1eab350e597c06",
                 "sha256:ffd4e4877a78c84d693e491b223385e0271278f5f4e1476a4962dca6824ecfeb"
             ],
-            "markers": "python_version >= '2.5' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.5' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==3.17.2"
         },
         "six": {
@@ -466,7 +458,7 @@
                 "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
                 "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==1.15.0"
         },
         "tabulate": {

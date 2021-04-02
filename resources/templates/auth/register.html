@@ -7,39 +7,42 @@
                     <header class="font-semibold bg-gray-200 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
                         Register
                     </header>
-                    <div class="flex-auto p-6">
-                        {% if bag().any() %}
-                            {% for error in bag().get_errors() %}
-                                <div class="relative px-3 py-3 mb-4 border rounded text-red-darker border-red-dark bg-red-lighter" role="alert">
-                                    {{ error }}
-                                </div>
-                            {% endfor %}
-                        {% endif %}
-                        <form class="w-full px-6 space-y-6 sm:px-10 sm:space-y-8" method="POST" action="{{ route('register') }}">
-                            {{ csrf_field }}
-                            <div class="flex flex-wrap">
-                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                                    Name
-                                </label>
-                                <input type="text" name="name" class="form-input w-full" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    
+                    {% if bag().any() %}
+                        {% for error in bag().get_errors() %}
+                            <div class="relative px-3 py-3 mb-4 border rounded text-red-darker border-red-dark bg-red-lighter" role="alert">
+                                {{ error }}
                             </div>
-                            <div class="flex flex-wrap">
-                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                                    E-Mail Address
-                                </label>
-                                <input type="email" name="email" class="form-input w-full" value="{{ old('email') }}" required autocomplete="email">
-                            </div>
-                            <div class="flex flex-wrap">
-                                <label for="password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                                    Password
-                                </label>
-                                <input type="password" name="password" class="form-input w-full" required autocomplete="new-password">
-                            </div>
-                            <button type="submit" class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-4">
+                        {% endfor %}
+                    {% endif %}
+                    <form class="w-full px-6 space-y-6 sm:px-10 sm:space-y-8" method="POST" action="{{ route('register') }}">
+                        {{ csrf_field }}
+                        <div class="flex flex-wrap">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                                Name
+                            </label>
+                            <input type="text" name="name" class="form-input w-full" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                        </div>
+                        <div class="flex flex-wrap">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                                E-Mail Address
+                            </label>
+                            <input type="email" name="email" class="form-input w-full" value="{{ old('email') }}" required autocomplete="email">
+                        </div>
+                        <div class="flex flex-wrap">
+                            <label for="password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                                Password
+                            </label>
+                            <input type="password" name="password" class="form-input w-full" required autocomplete="new-password">
+                        </div>
+                        <div class="flex flex-wrap">
+                            <button type="submit" 
+                            class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-4">
                                 Register
                             </button>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+                
                 </section>
             </div>
         </div>

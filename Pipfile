@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-masonite = ">=3.0,<4.0"
+masonite = "<4.0,>=3.0"
 masonite-logging = ">=1.0,<2.0"
-masonite-validation = ">=3.0,<4.0"
+masonite-validation = "<4.0,>=3.0"
 masonite-inertia = "*"
 
 [dev-packages]

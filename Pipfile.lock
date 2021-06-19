@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "82e4378d4129d799a67a0eb817d8e01e5f913b4812e0c7e232516a4131d62f1a"
+            "sha256": "fe8cb157847d992c96597ae4f1cdc4f52fd44c4737421b0827ce9a9e82a10269"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -280,9 +280,9 @@
         },
         "masonite-orm": {
             "hashes": [
-                "sha256:a453962ac6240862113c2af8cd1cecf0f73c02fcb16aa5f95b9deb311cae9158"
+                "sha256:efbdbcc8829f6b1b613aa863d64a7e49d74cc4ca9df5622b8c5c4a8a69bfe50d"
             ],
-            "version": "==1.0.48"
+            "version": "==1.0.50"
         },
         "masonite-validation": {
             "hashes": [

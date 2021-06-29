@@ -1,28 +1,47 @@
 {
-    "devDependencies": {
-        "@babel/preset-react": "^7.0.0",
-        "@vue/compiler-sfc": "^3.0.5",
-        "autoprefixer": "^10.2.1",
-        "axios": "^0.21.1",
-        "cross-env": "^5.2.1",
-        "laravel-mix": "^6.0.5",
-        "lodash": "^4.17.20",
-        "postcss": "^8.2.1",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
-        "resolve-url-loader": "^3.1.2",
-        "sass": "^1.30.0",
-        "sass-loader": "^7.3.1",
-        "tailwindcss": "^2.0.2",
-        "vue-loader": "^16.1.2"
-    },
-    "private": true,
-    "scripts": {
-        "dev": "npx mix",
-        "development": "mix",
-        "hot": "mix watch --hot",
-        "production": "mix --production",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000"
-    }
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^6.3.0-rc.11",
+    "@storybook/addon-essentials": "^6.3.0-rc.11",
+    "@storybook/addon-links": "^6.3.0-rc.11",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.3.0-rc.11",
+    "@storybook/manager-webpack5": "^6.3.0-rc.11",
+    "@storybook/react": "^6.3.0-rc.11",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.1",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^5.2.1",
+    "laravel-mix": "^6.0.5",
+    "lodash": "^4.17.20",
+    "postcss": "^8.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.30.0",
+    "sass-loader": "^7.3.1",
+    "tailwindcss": "^2.0.2",
+    "vue-loader": "^16.1.2"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0",
+    "webpack-virtual-modules": "^0.4.2",
+    "postcss": "^8.1",
+    "postcss-functions": "^3",
+    "css-loader": "^5.0.0"
+},
+  "private": true,
+  "scripts": {
+    "dev": "npx mix",
+    "development": "mix",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {}
 }

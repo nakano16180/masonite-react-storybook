@@ -20,7 +20,6 @@ from masonite.providers import (
 from masonite.logging.providers import LoggingProvider
 from masonite.validation.providers import ValidationProvider
 from masoniteorm.providers import ORMProvider
-from masonite.inertia import InertiaProvider
 
 """Providers List
 Providers are a simple way to remove or add functionality for Masonite
@@ -52,6 +51,5 @@ PROVIDERS = [
     LoggingProvider,
     ValidationProvider,
     ORMProvider,
-    InertiaProvider,
     # Application Providers
 ]

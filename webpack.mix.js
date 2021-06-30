@@ -12,4 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'storage/compiled/js').react()
-   .sass('resources/sass/app.scss', 'storage/compiled/');
+   .postCss('resources/css/app.css', 'storage/compiled/', [
+      require("tailwindcss"),
+   ]);
